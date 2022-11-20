@@ -175,8 +175,9 @@ def get_readable_message():
             if PAGE_NO > PAGES and PAGES != 0:
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
+        if EMOJI_THEME is True:
+            smsg = f"<b>LEECH MIRROR STATUS 🧾</b>
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
-            msg += f"<b> LEECH MIRROR STATUS </b>"
             msg += f"<b>╭ <a href='{download.message.link}'>{download.status()}</a>: </b>"
             msg += f"<code>{escape(str(download.name()))}</code>"
             if download.status() not in [MirrorStatus.STATUS_SEEDING, MirrorStatus.STATUS_SPLITTING]:
@@ -310,8 +311,8 @@ def get_readable_message():
                 buttons.sbutton("Refresh", "status refresh")
                 buttons.sbutton("Close", "status close")
             button = buttons.build_menu(3)
-            return msg + bmsg, button
-        return msg + bmsg, sbutton
+            return smsg + msg + bmsg, button
+        return smsg + msg + bmsg, sbutton
 
 def turn(data):
     try:
