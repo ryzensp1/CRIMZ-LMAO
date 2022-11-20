@@ -178,7 +178,7 @@ def get_readable_message():
         if EMOJI_THEME is True:
             smsg = f"\n<b>  <a>  ┏━━━━━━━━━━━━━━━━━┓ </a> </b>"
             smsg += f"\n<b> <a> ☲    CRIMZ X CLOUD ☁️     ☲ </a> </b>"
-            smsg += f"\n<b> <a> ┗━━━━━━━━━━━━━━━━━┛ </a> </b>"
+            smsg += f"\n<b> <a>┗━━━━━━━━━━━━━━━━━┛ </a> </b>"
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
             msg += f"\n<b>╭ <a href='{download.message.link}'>{download.status()}</a>: </b>"
             msg += f"<code>{escape(str(download.name()))}</code>"
