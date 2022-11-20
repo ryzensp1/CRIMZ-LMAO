@@ -176,7 +176,7 @@ def get_readable_message():
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
         if EMOJI_THEME is True:
-            smsg = f"<b> <a> LEECH MIRROR STATUS 🧾 </a> </b>"
+            smsg = f"\n<b> <a> LEECH MIRROR STATUS 🧾 </a> </b>"
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
             msg += f"<b>╭ <a href='{download.message.link}'>{download.status()}</a>: </b>"
             msg += f"<code>{escape(str(download.name()))}</code>"
