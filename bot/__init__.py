@@ -659,15 +659,15 @@ except KeyError:
 try:
     MIRROR_LOG_URL = getConfig('MIRROR_LOG_URL')
     if len(MIRROR_LOG_URL) == 0:
-        MIRROR_LOG_URL = ''
+        MIRROR_LOG_URL = 'https://t.me/+xpdLuh5h5jRiNWY1'
 except KeyError:
-    MIRROR_LOG_URL = ''
+    MIRROR_LOG_URL = 'https://t.me/+xpdLuh5h5jRiNWY1'
 try:
     LEECH_LOG_URL = getConfig('LEECH_LOG_URL')
     if len(LEECH_LOG_URL) == 0:
-        LEECH_LOG_URL = ''
+        LEECH_LOG_URL = 'https://t.me/+xpdLuh5h5jRiNWY1'
 except KeyError:
-    LEECH_LOG_URL = ''
+    LEECH_LOG_URL = 'https://t.me/+xpdLuh5h5jRiNWY1'
 try:	
     LEECH_LOG_INDEXING = getConfig('LEECH_LOG_INDEXING')	
     LEECH_LOG_INDEXING = LEECH_LOG_INDEXING.lower() == 'true'	
@@ -677,28 +677,28 @@ except KeyError:
 try:
     AUTHOR_NAME = getConfig('AUTHOR_NAME')
     if len(AUTHOR_NAME) == 0:
-        AUTHOR_NAME = 'Karan'
+        AUTHOR_NAME = 'Crimz'
 except KeyError:
-    AUTHOR_NAME = 'Karan'
+    AUTHOR_NAME = 'Crimz'
 try:
     AUTHOR_URL = getConfig('AUTHOR_URL')
     if len(AUTHOR_URL) == 0:
-        AUTHOR_URL = 'https://t.me/WeebZone_updates'
+        AUTHOR_URL = 'https://t.me/Crimz_Bots'
 except KeyError:
-    AUTHOR_URL = 'https://t.me/WeebZone_updates'
+    AUTHOR_URL = 'https://t.me/Crimz_Bots'
 try:
     TITLE_NAME = getConfig('TITLE_NAME')
     if len(TITLE_NAME) == 0:
-        TITLE_NAME = 'WeebZone'
+        TITLE_NAME = 'Crimz Bots'
 except KeyError:
-    TITLE_NAME = 'WeebZone'
+    TITLE_NAME = 'Crimz Bots'
 
 try:
     GD_INFO = getConfig('GD_INFO')
     if len(GD_INFO) == 0:
-        GD_INFO = 'Uploaded by WeebZone Mirror Bot'
+        GD_INFO = 'Uploaded by Crimz Mirror Bot'
 except KeyError:
-    GD_INFO = 'Uploaded by WeebZone Mirror Bot'
+    GD_INFO = 'Uploaded by Crimz Mirror Bot'
 try:
     DISABLE_DRIVE_LINK = getConfig('DISABLE_DRIVE_LINK')
     DISABLE_DRIVE_LINK = DISABLE_DRIVE_LINK.lower() == 'true'
@@ -709,9 +709,9 @@ except KeyError:
 try:
     CREDIT_NAME = getConfig('CREDIT_NAME')
     if len(CREDIT_NAME) == 0:
-        CREDIT_NAME = 'WeebZone'
+        CREDIT_NAME = 'Crimz Bots'
 except KeyError:
-    CREDIT_NAME = 'WeebZone'
+    CREDIT_NAME = 'Crimz Bots'
 try:
     NAME_FONT = getConfig('NAME_FONT')
     if len(NAME_FONT) == 0:
