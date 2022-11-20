@@ -176,7 +176,7 @@ def get_readable_message():
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
         if EMOJI_THEME is True:
-            smsg += f"\n<b> <a> ┏━━━━━━━━━━━━━━━━━┓ </a> </b>"
+            smsg = f"\n<b> <a> ┏━━━━━━━━━━━━━━━━━┓ </a> </b>"
             smsg += f"\n<b> <a> ☲    CRIMZ X CLOUD ☁️     ☲ </a> </b>"
             smsg += f"\n<b> <a> ┗━━━━━━━━━━━━━━━━━┛ </a> </b>"
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
