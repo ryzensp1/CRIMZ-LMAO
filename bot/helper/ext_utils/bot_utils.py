@@ -176,9 +176,8 @@ def get_readable_message():
                 globals()['COUNT'] -= STATUS_LIMIT
                 globals()['PAGE_NO'] -= 1
         if EMOJI_THEME is True:
-            smsg = f"\n<b>  <a>  ┏━━━━━━━━━━━━━━━━━┓ </a> </b>"
-            smsg += f"\n<b> <a> ☲    CRIMZ X CLOUD ☁️     ☲ </a> </b>"
-            smsg += f"\n<b> <a>┗━━━━━━━━━━━━━━━━━┛ </a> </b>"
+            smsg = f"\n<b> <a> ☲    CRIMZ X CLOUD ☁️     ☲ </a> </b>"
+            smsg += f"\n<b> <a>━━━━━━━━━━━━━━━━━━━</a> </b>"
         for index, download in enumerate(list(download_dict.values())[COUNT:], start=1):
             msg += f"\n<b>╭ <a href='{download.message.link}'>{download.status()}</a>: </b>"
             msg += f"<code>{escape(str(download.name()))}</code>"
@@ -254,7 +253,7 @@ def get_readable_message():
                 else:
                     msg += f"\n<b>├ Engine :</b> {download.eng()}"
                     msg += f"\n<b>╰ Size: </b>{download.size()}"
-            msg += f"\n<b>_________________________________</b>"
+            msg += f"\n<b>━━━━━━━━━━━━━━━━━━━━━━━</b>"
             msg += "\n\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
                 break
